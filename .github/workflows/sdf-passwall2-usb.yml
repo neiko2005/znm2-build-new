@@ -12,13 +12,13 @@ permissions: write-all
 #CI任务
 jobs:
   build:
-    name: znm2-sdf-passwall2
+    name: znm2-sdf-passwall2-usb
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/core.yml
     with:
       #编译平台
-      TARGET: znm2-sdf-passwall2
+      TARGET: znm2-sdf-passwall2-usb
       #源码
       REPO_SOURCE: sdf8057
       #源码地址
@@ -28,7 +28,7 @@ jobs:
       #软件源
       FEEDS_CONF: feeds.conf.default
       #配置文件
-      CONFIG_FILE: ./config/sdf/new-passwall2.config
+      CONFIG_FILE: ./config/sdf/passwall2-usb.config
       #自定义脚本1
       DIY_P1_SH: ./scripts/sdf/diy-part1.sh
       #自定义脚本2
