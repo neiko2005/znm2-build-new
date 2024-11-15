@@ -1,5 +1,5 @@
 #CI项目
-name: test-znm2-sdf-passwall2
+name: znm2-sdf-passwall2-usb
 
 #CI计划
 on:
